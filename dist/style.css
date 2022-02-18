@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+@font-face {
+  font-family: "HKGrotesk";
+  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.otf") format("otf");
+  /* IE9 Compat Modes */
+  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,98 +11,182 @@
 }
 
 body {
-  background-color: #242333;
-  color: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh;
-  font-family: "Lato", sans-serif;
+  justify-content: stretch;
+  background-color: #f1f1f1;
+  color: #fff;
+  padding: 10% 10%;
+  overflow: hidden;
+  font-family: "HKGrotesk", sans-serif;
 }
-
-.select_container {
-  margin: 20px 0;
+body h1 {
+  text-align: center;
+  color: gray;
 }
-.select_container select#movie_picker {
-  outline: 0;
+body h2 {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  display: inline-block;
+}
+body h3 {
+  color: #000;
+}
+body h4 {
+  color: #777777;
+}
+body h4 a {
+  color: #777777;
+  text-decoration: none;
+}
+body button {
+  padding: 20px 100px;
+  background-color: #1cc691;
+  color: #fff;
   border: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 5px 15px;
-  border-radius: 5px;
-  margin-left: 10px;
-  background-color: #fff;
-  font-family: "Lato", sans-serif;
-  cursor: pointer;
+  border-radius: 60px;
+  font-size: 16px;
 }
 
-.seat {
-  background-color: #444451;
-  height: 12px;
-  width: 15px;
-  margin: 3px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-.seat.selected {
-  background-color: #6feaf6;
-}
-.seat.occupied {
-  background-color: #fff;
-}
-
-.showcase {
-  background-color: rgba(0, 0, 0, 0.1);
-  color: #777;
-  padding: 5px 10px;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.showcase li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
-}
-.showcase li small {
-  margin-left: 3px;
-}
-
-.seats_container {
-  perspective: 1000px;
-  margin: 20px 0;
-}
-.seats_container .screen {
-  background-color: #fff;
+.wrapper-logo {
   height: 70px;
+  width: 200px;
+  overflow: hidden;
+}
+.wrapper-logo .logo {
+  display: block;
   width: 100%;
-  transform: rotateX(-45deg);
-  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
-  margin-bottom: 10px;
-}
-.seats_container .row {
-  display: flex;
-  justify-content: space-between;
-}
-.seats_container .row .seat:nth-of-type(2) {
-  margin-right: 18px;
-}
-.seats_container .row .seat:nth-last-of-type(2) {
-  margin-left: 18px;
-}
-.seats_container .row .seat:not(.occupied):hover {
-  cursor: pointer;
-  transform: scale(1.2);
+  height: auto;
 }
 
-p.text {
-  margin: 5px 0;
+.container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-p.text span {
-  color: #6feafa;
+
+.top-container {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 5% 5%;
+  border: 1px solid #d6d6d6;
+  border-bottom: none;
+  border-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  overflow: hidden;
+}
+
+.main-container {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 5% 5%;
+  border: 1px solid #d6d6d6;
+  overflow: hidden;
+}
+.main-container .add_label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.main-container .add_label h2 {
+  margin-left: 10px;
+}
+
+.bottom-container {
+  background-color: #fff;
+  display: block;
+  width: 100%;
+  padding: 5% 5%;
+  border: 1px solid #d6d6d6;
+  border-top: none;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  overflow: hidden;
+}
+.bottom-container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .form-row {
+  display: flex;
+  margin-bottom: 20px;
+}
+form label {
+  color: #000;
+  font-weight: light;
+}
+
+/************************** toggle button */
+label.switch {
+  text-align: left;
+  width: 67px;
+  height: 33.5px;
+  border-radius: 60px;
+  background-color: #1cc691;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+label.switch > span {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+label.switch > input[type=checkbox] {
+  opacity: 0;
+  position: absolute;
+}
+
+label.switch > span:before,
+label.switch > span:after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+}
+
+label.switch > span {
+  border-radius: 60px;
+}
+
+label.switch > span:before {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  border-radius: 60px;
+  transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
+  transform: scale(1);
+  opacity: 1;
+}
+
+label.switch > span:after {
+  top: 50%;
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  width: 29.1304347826px;
+  height: 29.1304347826px;
+  transform: translate3d(0, -50%, 0);
+  background-color: #fff;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+label.switch > input[type=checkbox]:checked ~ span:before {
+  transform: scale(0);
+  opacity: 0.7;
+}
+
+label.switch > input[type=checkbox]:checked ~ span:after {
+  transform: translate3d(125%, -50%, 0);
 }
 /*# sourceMappingURL=style.css.map */

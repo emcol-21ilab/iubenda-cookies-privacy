@@ -1,5 +1,14 @@
-//@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@font-face {
+    font-family: 'HKGrotesk';
+    src: url('../../dist/fonts/hk-grotesk/HKGrotesk-Bold.otf') format('otf');
+    /* IE9 Compat Modes */
+    src: //url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+        url('../../dist/fonts/hk-grotesk/HKGrotesk-Bold.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        //url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+        //url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+        //url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 
 * {
     box-sizing: border-box;
@@ -8,115 +17,201 @@
 }
 
 body {
-    background-color: #242333;
-    color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    font-family: 'Lato', sans-serif;
-}
+    justify-content: stretch;
+    background-color: #f1f1f1;
+    color: #fff;
+    padding: 10% 10%;
+    overflow: hidden;
+    //height: 100vh;
+    font-family: 'HKGrotesk', sans-serif;
 
-
-.select_container {
-
-    margin: 20px 0;
-
-    select#movie_picker {
-        //form reset style
-        outline: 0;
-        border: 0;
-        appearance: none; //to affect box-model properties of the select
-
-        padding: 5px 15px;
-        border-radius: 5px;
-        margin-left: 10px;
-        background-color: #fff;
-
-        font-family: 'Lato', sans-serif;
-        cursor: pointer;
-    }
-}
-
-.seat {
-    background-color: #444451;
-    height: 12px;
-    width: 15px;
-    margin: 3px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
-    &.selected {
-        background-color: #6feaf6;
+    h1 {
+        text-align: center;
+        color: gray;
     }
 
-    &.occupied {
-        background-color: #fff;
+    h2 {
+        text-align: center;
+        color: #333333;
+        font-weight: bold;
+        display: inline-block;
     }
-}
-
-.showcase {
-    background-color: rgba(0, 0, 0, 0.1);
-    color: #777;
-    padding: 5px 10px;
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 0 10px;
-
-        small {
-            margin-left: 3px;
+    h3 {
+        color: #000;
+    }
+    h4 {
+        color: #777777;
+        a {
+            color: #777777;
+            text-decoration: none;
         }
     }
+    button {
+        padding: 20px 100px;
+        background-color: #1cc691;
+        color: #fff;
+        border: 0;
+        border-radius: 60px;
+        font-size: 16px;
+    }
 }
 
-.seats_container {
-    //property for the container of 3D elements effect
-    perspective: 1000px;
-    margin: 20px 0;
+.wrapper-logo {
+    height: 70px;
+    width: 200px;
+    overflow: hidden;
 
-    .screen {
-        background-color: #fff;
-        height: 70px;
+    .logo {
+        display: block;
         width: 100%;
-        //screen 3D parameters
-        transform: rotateX(-45deg);
-        box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
-        margin-bottom: 10px;
+        height: auto;
     }
-
+}
+.container {
     .row {
         display: flex;
+        align-items: center;
         justify-content: space-between;
-
-        .seat {
-            &:nth-of-type(2) {
-                margin-right: 18px;
-            }
-
-            &:nth-last-of-type(2) {
-                margin-left: 18px;
-            }
-
-            &:not(.occupied):hover {
-                cursor: pointer;
-                transform: scale(1.2);
-            }
+    }
+}
+.top-container {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    padding: 5% 5%;
+    border: 1px solid #d6d6d6;
+    border-bottom: none;
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    overflow: hidden;
+}
+.main-container {
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    padding: 5% 5%;
+    border: 1px solid #d6d6d6;
+    overflow: hidden;
+    .add_label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        h2 {
+            margin-left: 10px;
         }
     }
 }
-
-p.text {
-    margin: 5px 0;
-
-    span {
-        color: #6feafa;
+.bottom-container {
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    padding: 5% 5%;
+    border: 1px solid #d6d6d6;
+    border-top: none;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    overflow: hidden;
+}
+form {
+    .form-row {
+        display: flex;
+        margin-bottom: 20px;
+    }
+    label {
+        color: #000;
+        font-weight: light;
+    }
+}
+
+
+
+
+
+
+
+
+
+/************************** toggle button */
+label.switch {
+    text-align: left;
+    width: 67px;
+    height: calc(67px / 2);
+    border-radius: 60px;
+    background-color: #1cc691;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+label.switch>span {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+label.switch>input[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
+label.switch>span:before,
+label.switch>span:after {
+    content: "";
+    cursor: pointer;
+    position: absolute;
+}
+
+label.switch>input[type="checkbox"]:focus~span {
+    //box-shadow: 0 0 0 4px #1cc691;
+}
+
+label.switch>input[type="checkbox"]:checked:focus~span {
+    //box-shadow: 0 0 0 4px #fff;
+}
+
+label.switch>span {
+    border-radius: 60px;
+}
+
+label.switch>span:before {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+    border-radius: 60px;
+    transition: opacity .2s ease-out .1s, transform .2s ease-out .1s;
+    transform: scale(1);
+    opacity: 1;
+}
+
+label.switch>span:after {
+    top: 50%;
+    z-index: 3;
+    transition: transform .4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+    width: calc(67px / 2.3);
+    height: calc(67px / 2.3);
+    transform: translate3d(0, -50%, 0);
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
+}
+
+//Animate the switch when checked.
+label.switch>input[type="checkbox"]:checked~span:before {
+    transform: scale(0);
+    opacity: .7;
+}
+
+label.switch>input[type="checkbox"]:checked~span:after {
+    transform: translate3d(125%, -50%, 0);
 }
