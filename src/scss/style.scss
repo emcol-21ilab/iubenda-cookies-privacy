@@ -1,63 +1,6 @@
-@font-face {
-    font-family: 'HKGrotesk';
-    src: url('../../dist/fonts/hk-grotesk/HKGrotesk-Bold.otf') format('otf');
-    /* IE9 Compat Modes */
-    src: //url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../../dist/fonts/hk-grotesk/HKGrotesk-Bold.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        //url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
-        //url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-        //url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: stretch;
-    background-color: #f1f1f1;
-    color: #fff;
-    padding: 10% 10%;
-    overflow: hidden;
-    //height: 100vh;
-    font-family: 'HKGrotesk', sans-serif;
-
-    h1 {
-        text-align: center;
-        color: gray;
-    }
-
-    h2 {
-        text-align: center;
-        color: #333333;
-        font-weight: bold;
-        display: inline-block;
-    }
-    h3 {
-        color: #000;
-    }
-    h4 {
-        color: #777777;
-        a {
-            color: #777777;
-            text-decoration: none;
-        }
-    }
-    button {
-        padding: 20px 100px;
-        background-color: #1cc691;
-        color: #fff;
-        border: 0;
-        border-radius: 60px;
-        font-size: 16px;
-    }
-}
+@import 'font.scss';
+@import 'general.scss';
+@import 'customize.scss';
 
 .wrapper-logo {
     height: 70px;
@@ -70,6 +13,7 @@ body {
         height: auto;
     }
 }
+
 .container {
     .row {
         display: flex;
@@ -77,61 +21,89 @@ body {
         justify-content: space-between;
     }
 }
-.top-container {
-    background-color: #fff;
-    display: block;
-    width: 100%;
-    padding: 5% 5%;
-    border: 1px solid #d6d6d6;
-    border-bottom: none;
-    border-radius: 4px;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    overflow: hidden;
+.container-header {
+    
+    #domain {
+        
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .desk-icon {
+            height: 30px;
+            width: 30px;
+            background-color: rgb(0 0 0 / 4%);
+            padding: 13% 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: .25rem;
+        }
+        .account-info {
+            margin-left: 20px;
+            h2 {
+                font-size: 2.25rem;
+            }
+            small {
+                color: #777777;
+            }
+        }
+    }
 }
-.main-container {
+.container-main {
+    color: #5A5A5A;
+    text-align: left;
     background-color: #fff;
     display: block;
     width: 100%;
-    padding: 5% 5%;
+    padding: 2rem;
     border: 1px solid #d6d6d6;
     overflow: hidden;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 0 0 8px rgb(0 0 0 / 4%);
+    border-radius: .25rem;
+}
+
+.container-body {
     .add_label {
         display: flex;
         align-items: center;
         margin-bottom: 20px;
+
         h2 {
             margin-left: 10px;
         }
     }
 }
-.bottom-container {
+
+.container-footer {
     .row {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    background-color: #fff;
-    display: block;
-    width: 100%;
-    padding: 5% 5%;
-    border: 1px solid #d6d6d6;
-    border-top: none;
-    border-radius: 4px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    overflow: hidden;
 }
+
 form {
     .form-row {
         display: flex;
         margin-bottom: 20px;
     }
+
     label {
         color: #000;
         font-weight: light;
     }
 }
+
+hr {
+    margin: 3rem -2rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
 
 
 
