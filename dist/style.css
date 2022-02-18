@@ -1,37 +1,58 @@
 @font-face {
-  font-family: "HKGrotesk";
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.eot") format("embedded-opentype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.ttf") format("truetype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Bold.svq") format("svg");
-  /* Legacy iOS */
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Medium.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Medium.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-Medium.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-Medium.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-Medium.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-Medium.svg#HKGrotesk-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "HKGrotesk";
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.eot") format("embedded-opentype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.ttf") format("truetype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Regular.svq") format("svg");
-  /* Legacy iOS */
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Light.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Light.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-Light.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-Light.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-Light.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-Light.svg#HKGrotesk-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "HKGrotesk";
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.eot") format("embedded-opentype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.woff2") format("woff2"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.woff") format("woff"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.ttf") format("truetype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Medium.svq") format("svg");
-  /* Legacy iOS */
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Black.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Black.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-Black.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-Black.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-Black.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-Black.svg#HKGrotesk-Black") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "HKGrotesk";
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.eot") format("embedded-opentype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.woff2") format("woff2"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.woff") format("woff"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.ttf") format("truetype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-Light.svq") format("svg");
-  /* Legacy iOS */
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Bold.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Bold.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-Bold.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-Bold.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-Bold.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-Bold.svg#HKGrotesk-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
-  font-family: "HKGrotesk";
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.otf") format("otf");
-  /* IE9 Compat Modes */
-  src: url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.eot") format("embedded-opentype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.woff2") format("woff2"), url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.woff") format("woff"), url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.ttf") format("truetype"), url("../../dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.svq") format("svg");
-  /* Legacy iOS */
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-ExtraBold.svg#HKGrotesk-ExtraBold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold") format("svg");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Regular.eot");
+  src: url("dist/fonts/hk-grotesk/HKGrotesk-Regular.eot?#iefix") format("embedded-opentype"), url("dist/fonts/hk-grotesk/HKGrotesk-Regular.woff2") format("woff2"), url("dist/fonts/hk-grotesk/HKGrotesk-Regular.woff") format("woff"), url("dist/fonts/hk-grotesk/HKGrotesk-Regular.ttf") format("truetype"), url("dist/fonts/hk-grotesk/HKGrotesk-Regular.svg#HKGrotesk-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 * {
   box-sizing: border-box;
@@ -45,49 +66,46 @@ body {
   align-items: center;
   justify-content: stretch;
   background-color: rgba(0, 0, 0, 0.04);
-  color: #fff;
-  padding: 10% 10%;
+  color: #5a5a5a;
+  padding: 5% 10%;
   font-family: "HKGrotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-body h1 {
-  text-align: center;
-  color: gray;
-}
-body h2 {
-  text-align: center;
-  font-weight: 500;
-  line-height: 1.2;
-  color: #5a5a5a;
-}
+body h1,
+body h2,
 body h3 {
-  color: #5a5a5a;
+  text-align: center;
   font-weight: 500;
   line-height: 1.2;
+}
+body ul, body ol {
+  list-style: none;
 }
 body a {
   text-decoration: none;
 }
-body h4, body legend {
-  color: #777777;
+
+button,
+input {
+  overflow: visible;
 }
 
-.btn-primary {
-  padding: 0.5rem 3rem;
-  background-color: #1cc691;
-  border: 1px solid #1CC691;
-  color: #fff;
-  border-radius: 2rem;
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  font-size: 1rem;
-  line-height: 1.5;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+input,
+button,
+select,
+optgroup,
+textarea {
+  outline: none;
+  outline: 0;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
-.btn-primary:hover, .btn-primary:focus {
-  color: #d9d9d9;
-  background-color: #17a478;
-  border-color: #169970;
+
+.container .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .wrapper-logo {
@@ -99,12 +117,6 @@ body h4, body legend {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.container .row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .container-header #domain {
@@ -138,17 +150,18 @@ body h4, body legend {
   background-color: #fff;
   display: block;
   width: 100%;
-  padding: 2rem;
+  padding: 3rem;
   border: 1px solid #d6d6d6;
   overflow: hidden;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.04);
   border-radius: 0.25rem;
+  margin: 35px auto;
 }
 
 .container-body .add_label {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 55px;
 }
 .container-body .add_label h2 {
   margin-left: 10px;
@@ -159,18 +172,21 @@ body h4, body legend {
   align-items: center;
   justify-content: space-between;
 }
+.container-footer a:not(.btn-primary) {
+  color: #5a5a5a;
+  font-size: 18px;
+}
 
 form .form-row {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 45px;
 }
-form label {
-  color: #000;
-  font-weight: light;
+form .form-row .form-column:not(:first-of-type) {
+  margin-left: 80px;
 }
 
 hr {
-  margin: 3rem -2rem;
+  margin: 3rem -3rem;
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: content-box;
@@ -242,5 +258,190 @@ label.switch > input[type=checkbox]:checked ~ span:before {
 
 label.switch > input[type=checkbox]:checked ~ span:after {
   transform: translate3d(125%, -50%, 0);
+}
+
+.btn-primary {
+  padding: 1rem 6rem;
+  background-color: #1cc691;
+  border: 1px solid #1CC691;
+  color: #fff;
+  border-radius: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary:hover, .btn-primary:focus {
+  color: #d9d9d9;
+  background-color: #17a478;
+  border-color: #169970;
+}
+
+legend {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+fieldset {
+  position: relative;
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.radio {
+  display: flex;
+}
+.radio .radio-container {
+  display: flex;
+  position: relative;
+}
+.radio .radio-container:not(:last-of-type) {
+  margin-right: 1rem;
+}
+.radio .radio-container input {
+  box-sizing: border-box;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0.25rem;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  background-position: center;
+  background-size: 0 auto;
+  background-repeat: no-repeat;
+  transition: background 0.4s ease;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  /* hides input */
+  opacity: 0;
+  height: 1px;
+  width: 1px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  position: absolute;
+}
+.radio .radio-container label {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  width: 160px;
+  height: 60px;
+  font-size: 0.95rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.radio .radio-container label:not(:last-of-type) {
+  margin-left: 15px;
+}
+.radio .radio-container input:checked + label {
+  background-color: #FFF;
+  border: 1px solid #1CC691;
+  box-shadow: 0 0 0 2px #1cc69120;
+  color: #1CC691;
+}
+.radio .radio-container input.radio-type:checked {
+  background-image: url("../../dist/images/checked-icon.svg");
+  background-size: 6px 6px;
+  border-radius: 28px;
+}
+.radio.radio-type2 .radio-container {
+  padding-bottom: 30px;
+}
+.radio.radio-type2 .radio-container label {
+  width: 180px;
+  height: 95px;
+  position: relative;
+}
+.radio.radio-type2 .radio-container label .add-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 20px;
+  width: 20px;
+}
+.radio.radio-type2 .radio-container label .add-icon img {
+  color: #5a5a5a;
+}
+.radio.radio-type2 .radio-container label small {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.radio.radio-type3 .radio-container:not(:first-of-type) {
+  margin-left: 35px;
+}
+.radio.radio-type3 .radio-container label {
+  border-radius: 0;
+  border: 0;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  margin: 0;
+  margin-left: 15px;
+  padding: 0;
+  text-align: left;
+  font-weight: 500;
+}
+.radio.radio-type3 .radio-container input {
+  position: static;
+  width: 28px;
+  height: 28px;
+  border-radius: 28px;
+  opacity: 1;
+  border: 1px solid #ced4da;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+.radio.radio-type3 .radio-container input:checked {
+  background-size: 6px 6px;
+  background-image: url("../../dist/images/checked-icon.svg");
+}
+.radio.radio-type3 .radio-container input:checked + label {
+  background-color: #FFF;
+  border: 0;
+  box-shadow: none;
+  color: #5a5a5a;
+}
+.radio.radio-type3.checkbox-type {
+  flex-direction: column;
+}
+.radio.radio-type3.checkbox-type .radio-container:not(:first-of-type) {
+  margin-left: 0;
+}
+.radio.radio-type3.checkbox-type .radio-container:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.radio.radio-type3.checkbox-type .radio-container input {
+  border-radius: 0.25rem;
+}
+.radio.radio-type3.checkbox-type .radio-container input:checked {
+  background-size: 10px 10px;
+  background-image: url("../../dist/images/flag-icon.svg");
+}
+
+footer nav ul li:not(:first-of-type) {
+  margin-left: 40px;
+}
+footer nav ul li a {
+  color: #5a5a5a;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

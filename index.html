@@ -16,7 +16,7 @@
     </div>
 
     <div class="container-main">
-
+        <form>
         <div class="container-header container">
 
             <div class="row">
@@ -45,7 +45,7 @@
             <div class="add_label">
 
                 <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                     <span></span>
                 </label>
 
@@ -53,119 +53,141 @@
 
             </div>
 
-            <form action="" class="add-form">
-
                 <div class="form-container">
 
                     <div class="form-row">
 
-                        <h4>Position</h4>
-
-                        <div class="form-group">
-                            <label for="">
-                            </label>
+                        <div class="form-column">
+                            <legend>Position</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio radio-type2">
+                                        <div class="radio-container ">
+                                            <input id="position" name="position" type="checkbox" value="position">
+                                             <label for="position"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
-
-                        <h4>Theme</h4>
-
-                        <div class="form-group">
-                            <label for="">
-
-                            </label>
+                        <div class="form-column">
+                            <legend>Theme</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio radio-type2">
+                                        <div class="radio-container">
+                                            <input id="dark" name="theme" type="radio" value="dark" checked>
+                                             <label for="dark"><small>Dark</small></label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="light" name="theme" type="radio" value="light">
+                                            <label for="light"><small>Light</small></label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="custom" name="theme" type="radio" value="custom">
+                                            <label for="custom"><span class="add-icon"><img src="dist/images/add-icon.svg" alt="add icon"></span><small>Custom style</small></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
 
-                    <h4>Legislation</h4>
-                    <legend>Legislation</legend>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <legend>Legislation</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio">
+                                        <div class="radio-container">
+                                            <input id="GDPR" name="legislation" type="radio" value="GDPR" checked>
+                                             <label for="GDPR">GDPR Only</label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="CCPA" name="legislation" type="radio" value="CCPA">
+                                            <label for="CCPA">CCPA Only</label></div>
+                                        <div class="radio-container">
+                                            <input id="both" name="legislation" type="radio" value="both">
+                                            <label for="both">Both</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+
+                    <div class="form-row">
+                        <div class="form-column">
+                            <legend>Require consent from</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio">
+                                        <div class="radio-container">
+                                            <input id="eu" name="consent" type="radio" value="eu" checked>
+                                             <label for="eu">EU Only</label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="world" name="consent" type="radio" value="world">
+                                            <label for="world">World Wide</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+
+                    <legend>Banner buttons</legend>
 
                     <div class="form-row">
                         <div class="form-column">
                             <fieldset>
                                 <div>
-                                    
-                            
-                                    <div class="radio-type2">
-                                        <div class="radio-container "><input id="_iub_csc_1"
-                                                name="location.usersLocation" type="radio" value="worldwide">
-                                             <label for="_iub_csc_1">In tutto il mondo</label></div>
-                                        <div class="radio-container "><input id="_iub_csc_2"
-                                                name="location.usersLocation" type="radio" value="business_country">
-                                             <label for="_iub_csc_2">Solo nel mio paese</label></div>
-                                        <div class="radio-container "><input id="_iub_csc_3"
-                                                name="location.usersLocation" type="radio" value="selected_countries">
-                                             <label for="_iub_csc_3">Seleziona paesi</label></div>
+                                    <div class="radio radio-type3 checkbox-type">
+                                        <div class="radio-container">
+                                            <input id="accept-banner" name="bannerButton[]" type="checkbox" value="accept">
+                                             <label for="accept-banner">Explicit accept and Customize buttons</label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="reject-banner" name="bannerButton[]" type="checkbox" value="reject">
+                                            <label for="reject-banner">Explicit reject buttons</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="custom-field">
-                                    
-                                </div>
-                                <div class="invalid-tooltip">Seleziona un paese</div>
                             </fieldset>
-                            <div class="form-group">
-                                <input type="checkbox" name="button_reject" id="button_reject">
-                                <label for="button_reject">Explicit reject buttons</label>
-                            </div>
                         </div>
                     </div>
-
-                    <h4>Require consent from</h4>
-
+                    <legend>Other options</legend>
                     <div class="form-row">
                         <div class="form-column">
-                            <div class="form-group">
-                                <input type="checkbox" name="button_accept" id="button_accept">
-                                <label for="button_accept">Explicit accept and Customize buttons</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="button_reject" id="button_reject">
-                                <label for="button_reject">Explicit reject buttons</label>
-                            </div>
+                            <fieldset>
+                                <div>
+                                    <div class="radio radio-type3 checkbox-type">
+                                        <div class="radio-container">
+                                            <input id="framework" name="otherOptions[]" type="checkbox" value="framework">
+                                             <label for="framework">Enable IAB Transparency and Consent Framework</label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="google" name="otherOptions[]" type="checkbox" value="google">
+                                            <label for="google">Enable Google AMP support</label>
+                                        </div>
+                                        <div class="radio-container">
+                                            <input id="scripts" name="otherOptions[]" type="checkbox" value="scripts">
+                                            <label for="scripts">Automatically block scripts detected by the plugin</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
-                    </div>
-
-                    <h4>Banner buttons</h4>
-
-                    <div class="form-row">
-                        <div class="form-column">
-                            <div class="form-group">
-                                <input type="checkbox" name="button_accept" id="button_accept">
-                                <label for="button_accept">Explicit accept and Customize buttons</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="button_reject" id="button_reject">
-                                <label for="button_reject">Explicit reject buttons</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h4>Other options</h4>
-
-                    <div class="form-row">
-
-                        <div class="form-column">
-                            <div class="form-group">
-                                <input type="checkbox" name="button_accept" id="button_accept">
-                                <label for="button_accept">Explicit accept and Customize buttons</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="button_reject" id="button_reject">
-                                <label for="button_reject">Explicit reject buttons</label>
-                            </div>
-                            <div class="form-group">
-                                <input type="checkbox" name="button_reject" id="button_reject">
-                                <label for="button_reject">Explicit reject buttons</label>
-                            </div>
-                        </div>
-
                     </div>
 
                 </div>
-            </form>
+            
 
             <div class="add_label">
 
                 <label class="switch">
-                    <input type="checkbox" checked>
+                    <input type="checkbox">
                     <span></span>
                 </label>
 
@@ -173,29 +195,51 @@
 
             </div>
 
-            <form action="" class="add-form">
+            
                 <div class="form-container">
                     <div class="form-row">
-                        <div class="form-group">
-                            <label for="">
-                                <h4>Button style</h4>
-                            </label>
+                        <div class="form-column">
+                            <legend>Button style</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio radio-type2">
+                                        <div class="radio-container ">
+                                            <input id="light-button" name="button-style" type="radio" value="light" checked>
+                                            <label for="light-button"><small>Light</small></label>
+                                        </div>
+                                        <div class="radio-container ">
+                                            <input id="dark-button" name="button-style" type="radio" value="dark">
+                                             <label for="dark-button"><small>Dark</small></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group">
-                            <label for="">
-                                <h4>Button position</h4>
-                            </label>
+                        <div class="form-column">
+                            <legend>Button position</legend>
+                            <fieldset>
+                                <div>
+                                    <div class="radio radio-type3">
+                                        <div class="radio-container ">
+                                            <input id="auto" name="button-position" type="radio" value="auto">
+                                             <label for="auto">Put automatically button on footer</label>
+                                        </div>
+                                        <div class="radio-container ">
+                                            <input id="manual" name="button-position" type="radio" value="manual">
+                                            <label for="manual">Integrate button manually</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group"></div>
-                    </div>
+    
                 </div>
-            </form>
+            
         </div>
-
+        <hr>
         <div class="container-footer container">
             <div class="row">
                 <h4><a href="#">Reset settings</a></h4>
@@ -204,8 +248,21 @@
                 </a>
             </div>
         </div>
+        </form>
     </div>
 
+    <footer>
+        <nav>
+            <ul>
+                <div class="container">
+                    <div class="row">
+                        <li><a href="">Documentation</a></li>
+                        <li><a href="">Contact support</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </footer>
     <script src="dist/all.js"></script>
 </body>
 

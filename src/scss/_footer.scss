@@ -1,0 +1,13 @@
+footer {
+    nav {
+        ul li {
+            &:not(:first-of-type) {
+                margin-left: 40px;
+            }
+            a {
+                color: rgba(90,90,90,1);
+                font-weight: 600;
+            }
+        }
+    }
+}
