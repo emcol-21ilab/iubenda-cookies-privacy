@@ -118,10 +118,10 @@ fieldset {
 
                 &.theme-img {
                     &.dark {
-                        background-image: url('../../dist/images/dark-theme.png');
+                        background-image: url('images/dark-theme.png');
                     }
                     &.light {
-                        background-image: url('../../dist/images/light-theme.png');
+                        background-image: url('images/light-theme.png');
                     }
                     background-size: 150%;
                     background-position: 70% center;
@@ -182,7 +182,7 @@ fieldset {
 
                 &:checked {
                     background-size: 6px 6px;
-                    background-image: url('../../dist/images/checked-icon.svg');
+                    background-image: url('images/checked-icon.svg');
 
                     &+label {
                         background-color: #FFF;
@@ -210,7 +210,7 @@ fieldset {
                     border-radius: 0.25rem;
                     &:checked {
                         background-size: 10px 10px;
-                        background-image: url('../../dist/images/flag-icon.svg');
+                        background-image: url('images/flag-icon.svg');
                     }
                 }
             }
