@@ -49,19 +49,14 @@
 .container-main {
     color: #5A5A5A;
     text-align: left;
-    background-color: #fff;
-    display: block;
     width: 100%;
     padding: 3rem;
-    border: 1px solid #d6d6d6;
     overflow: hidden;
-    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 0 0 8px rgb(0 0 0 / 4%);
-    border-radius: .25rem;
     margin: 35px auto;
 }
 
 .container-body {
-    .add_label {
+    .toggle-wrapper {
         display: flex;
         align-items: center;
         margin-bottom: 55px;
@@ -108,15 +103,8 @@ hr {
 
 
 
-
-
-
-
-
-
-
 /************************** toggle button */
-label.switch {
+label.toggler {
     text-align: left;
     width: 67px;
     height: calc(67px / 2);
@@ -127,51 +115,51 @@ label.switch {
     cursor: pointer;
 }
 
-label.switch>span {
+label.toggler>span {
     display: block;
     width: 100%;
     height: 100%;
 }
 
-label.switch>input[type="checkbox"] {
+label.toggler>input[type="checkbox"] {
     opacity: 0;
     position: absolute;
 }
 
-label.switch>span:before,
-label.switch>span:after {
+label.toggler>span:before,
+label.toggler>span:after {
     content: "";
     cursor: pointer;
     position: absolute;
 }
 
-label.switch>input[type="checkbox"]:focus~span {
+label.toggler>input[type="checkbox"]:focus~span {
     //box-shadow: 0 0 0 4px #1cc691;
 }
 
-label.switch>input[type="checkbox"]:checked:focus~span {
+label.toggler>input[type="checkbox"]:checked:focus~span {
     //box-shadow: 0 0 0 4px #fff;
 }
 
-label.switch>span {
+label.toggler>span {
     border-radius: 60px;
 }
 
-label.switch>span:before {
+label.toggler>span:before {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
     background-color: #f1f1f1;
     border-radius: 60px;
-    transition: opacity .2s ease-out .1s, transform .2s ease-out .1s;
+    transition: opacity .1s ease-out .1s, transform .2s ease-out .1s;
     transform: scale(1);
     opacity: 1;
 }
 
-label.switch>span:after {
+label.toggler>span:after {
     top: 50%;
     z-index: 3;
-    transition: transform .4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+    transition: transform .2s cubic-bezier(0.44, -0.12, 0.07, 1.15);
     width: calc(67px / 2.3);
     height: calc(67px / 2.3);
     transform: translate3d(0, -50%, 0);
@@ -180,15 +168,17 @@ label.switch>span:after {
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
 }
 
-//Animate the switch when checked.
-label.switch>input[type="checkbox"]:checked~span:before {
+//Animate the toggler when checked.
+label.toggler>input[type="checkbox"]:checked~span:before {
     transform: scale(0);
     opacity: .7;
 }
 
-label.switch>input[type="checkbox"]:checked~span:after {
+label.toggler>input[type="checkbox"]:checked~span:after {
     transform: translate3d(125%, -50%, 0);
 }
 
 @import 'customize.scss';
+@import 'alert.scss';
+@import 'ui.scss';
 @import 'footer.scss';

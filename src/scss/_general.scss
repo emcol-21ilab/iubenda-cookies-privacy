@@ -1,3 +1,4 @@
+/* general global style */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -51,4 +52,15 @@ textarea {
         align-items: center;
         justify-content: space-between;
     }
+}
+
+.bg-grey-shadow {
+    background-color: #fff;
+    display: block;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 10%), 0 0 0 8px rgb(0 0 0 / 4%);
+    border-radius: .25rem;
+    border: 1px solid #d6d6d6;
+}
+.shadow-none {
+    box-shadow: none!important;
 }

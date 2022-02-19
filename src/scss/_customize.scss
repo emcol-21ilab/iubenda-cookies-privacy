@@ -116,6 +116,16 @@ fieldset {
                 height: 95px;
                 position: relative;
 
+                &.theme-img {
+                    &.dark {
+                        background-image: url('../../dist/images/dark-theme.png');
+                    }
+                    &.light {
+                        background-image: url('../../dist/images/light-theme.png');
+                    }
+                    background-size: 150%;
+                    background-position: 70% center;
+                }
                 .add-icon {
                     position: absolute;
                     top: 50%;

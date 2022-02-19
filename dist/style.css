@@ -1,3 +1,8 @@
+/* fonts 
+
+font-family: 'HKGrotesk', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+*/
 @font-face {
   font-family: "HK Grotesk";
   src: url("dist/fonts/hk-grotesk/HKGrotesk-Medium.eot");
@@ -54,6 +59,7 @@
   font-style: normal;
   font-display: swap;
 }
+/* general global style */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -108,6 +114,18 @@ textarea {
   justify-content: space-between;
 }
 
+.bg-grey-shadow {
+  background-color: #fff;
+  display: block;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.04);
+  border-radius: 0.25rem;
+  border: 1px solid #d6d6d6;
+}
+
+.shadow-none {
+  box-shadow: none !important;
+}
+
 .wrapper-logo {
   height: 70px;
   width: 200px;
@@ -147,23 +165,18 @@ textarea {
 .container-main {
   color: #5A5A5A;
   text-align: left;
-  background-color: #fff;
-  display: block;
   width: 100%;
   padding: 3rem;
-  border: 1px solid #d6d6d6;
   overflow: hidden;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 0 0 8px rgba(0, 0, 0, 0.04);
-  border-radius: 0.25rem;
   margin: 35px auto;
 }
 
-.container-body .add_label {
+.container-body .toggle-wrapper {
   display: flex;
   align-items: center;
   margin-bottom: 55px;
 }
-.container-body .add_label h2 {
+.container-body .toggle-wrapper h2 {
   margin-left: 10px;
 }
 
@@ -195,7 +208,7 @@ hr {
 }
 
 /************************** toggle button */
-label.switch {
+label.toggler {
   text-align: left;
   width: 67px;
   height: 33.5px;
@@ -206,43 +219,43 @@ label.switch {
   cursor: pointer;
 }
 
-label.switch > span {
+label.toggler > span {
   display: block;
   width: 100%;
   height: 100%;
 }
 
-label.switch > input[type=checkbox] {
+label.toggler > input[type=checkbox] {
   opacity: 0;
   position: absolute;
 }
 
-label.switch > span:before,
-label.switch > span:after {
+label.toggler > span:before,
+label.toggler > span:after {
   content: "";
   cursor: pointer;
   position: absolute;
 }
 
-label.switch > span {
+label.toggler > span {
   border-radius: 60px;
 }
 
-label.switch > span:before {
+label.toggler > span:before {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   background-color: #f1f1f1;
   border-radius: 60px;
-  transition: opacity 0.2s ease-out 0.1s, transform 0.2s ease-out 0.1s;
+  transition: opacity 0.1s ease-out 0.1s, transform 0.2s ease-out 0.1s;
   transform: scale(1);
   opacity: 1;
 }
 
-label.switch > span:after {
+label.toggler > span:after {
   top: 50%;
   z-index: 3;
-  transition: transform 0.4s cubic-bezier(0.44, -0.12, 0.07, 1.15);
+  transition: transform 0.2s cubic-bezier(0.44, -0.12, 0.07, 1.15);
   width: 29.1304347826px;
   height: 29.1304347826px;
   transform: translate3d(0, -50%, 0);
@@ -251,12 +264,12 @@ label.switch > span:after {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-label.switch > input[type=checkbox]:checked ~ span:before {
+label.toggler > input[type=checkbox]:checked ~ span:before {
   transform: scale(0);
   opacity: 0.7;
 }
 
-label.switch > input[type=checkbox]:checked ~ span:after {
+label.toggler > input[type=checkbox]:checked ~ span:after {
   transform: translate3d(125%, -50%, 0);
 }
 
@@ -366,6 +379,16 @@ fieldset {
   height: 95px;
   position: relative;
 }
+.radio.radio-type2 .radio-container label.theme-img {
+  background-size: 150%;
+  background-position: 70% center;
+}
+.radio.radio-type2 .radio-container label.theme-img.dark {
+  background-image: url("../../dist/images/dark-theme.png");
+}
+.radio.radio-type2 .radio-container label.theme-img.light {
+  background-image: url("../../dist/images/light-theme.png");
+}
 .radio.radio-type2 .radio-container label .add-icon {
   position: absolute;
   top: 50%;
@@ -437,6 +460,65 @@ fieldset {
   background-image: url("../../dist/images/flag-icon.svg");
 }
 
+/* alert css */
+.wrapper-alert {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 48px;
+  transition: all 400ms ease-in-out;
+}
+.wrapper-alert .alert-sidebar {
+  width: 12%;
+  height: 100%;
+  background-color: #e8f9f4;
+  position: relative;
+}
+.wrapper-alert .alert-sidebar span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #1CC691;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.wrapper-alert p {
+  width: 70%;
+  font-weight: 500;
+  font-size: 12px;
+  color: #5a5a5a;
+  margin-left: 2rem;
+}
+.wrapper-alert .close-btn {
+  background-color: #cccccc;
+  border: 0;
+  border-radius: 18px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+.hide {
+  display: none !important;
+}
+
+/* footer style */
 footer nav ul li:not(:first-of-type) {
   margin-left: 40px;
 }

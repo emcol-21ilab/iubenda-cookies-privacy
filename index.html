@@ -15,45 +15,57 @@
         <img src="dist/images/logo.svg" alt="">
     </div>
 
-    <div class="container-main">
+    <div class="container-main bg-grey-shadow">
         <form>
-        <div class="container-header container">
 
-            <div class="row">
-                <div id="domain">
+            <div class="container-header container">
+                <div class="row">
+                    <div id="domain">
 
-                    <span class="desk-icon">
-                        <img src="dist/images/desk-icon.svg" alt="desktop icon">
-                    </span>
-                    <div class="account-info">
-                        <h2>www.domain.com</h2>
-                        <small>Account & Billing info</small>
+                        <span class="desk-icon">
+                            <img src="dist/images/desk-icon.svg" alt="desktop icon">
+                        </span>
+                        <div class="account-info">
+                            <h2>www.domain.com</h2>
+                            <small>Account & Billing info</small>
+                        </div>
+
                     </div>
-
+                    <h3>
+                        Your current compliance rating
+                    </h3>
                 </div>
-                <h3>
-                    Your current compliance rating
-                </h3>
-            </div>
-
-        </div>
-
-        <hr>
-
-        <div class="container-body container">
-
-            <div class="add_label">
-
-                <label class="switch">
-                    <input type="checkbox">
-                    <span></span>
-                </label>
-
-                <h2>Add a cookie banner</h2>
 
             </div>
 
-                <div class="form-container">
+            <hr>
+
+            <!-- container body -->
+            <div class="container-body container">
+
+                <!-- alert-sidebar -->
+                <div id="wrapper-alert" class="wrapper-alert bg-grey-shadow shadow-none">
+                    <aside class="alert-sidebar"><span><img src="dist/images/check-icon-slim.svg" alt="alert icon"
+                                class="alert-icon"></span></aside>
+                    <p>Your website has been created and your legal documents have been generated. Setup your cookie
+                        banner and privacy policy button to complete the integration.</p>
+                    <a class="close-btn" data-target="#wrapper-alert">×</a>
+                </div><!-- / alert-sidebar -->
+
+                <!-- cookie toggler -->
+                <div class="toggle-wrapper">
+
+                    <label class="toggler">
+                        <input type="checkbox" class="toggle" data-target="#cookie">
+                        <span></span>
+                    </label>
+
+                    <h2>Add a cookie banner</h2>
+
+                </div><!-- / cookie toggler -->
+
+                <!-- cookie section -->
+                <section id="cookie" class="form-container hide">
 
                     <div class="form-row">
 
@@ -64,7 +76,7 @@
                                     <div class="radio radio-type2">
                                         <div class="radio-container ">
                                             <input id="position" name="position" type="checkbox" value="position">
-                                             <label for="position"></label>
+                                            <label for="position"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -77,15 +89,16 @@
                                     <div class="radio radio-type2">
                                         <div class="radio-container">
                                             <input id="dark" name="theme" type="radio" value="dark" checked>
-                                             <label for="dark"><small>Dark</small></label>
+                                            <label class="theme-img dark" for="dark"><small>Dark</small></label>
                                         </div>
                                         <div class="radio-container">
                                             <input id="light" name="theme" type="radio" value="light">
-                                            <label for="light"><small>Light</small></label>
+                                            <label class="theme-img light" for="light"><small>Light</small></label>
                                         </div>
                                         <div class="radio-container">
                                             <input id="custom" name="theme" type="radio" value="custom">
-                                            <label for="custom"><span class="add-icon"><img src="dist/images/add-icon.svg" alt="add icon"></span><small>Custom style</small></label>
+                                            <label for="custom"><span class="add-icon"></span><small>Custom
+                                                    style</small></label>
                                         </div>
                                     </div>
                                 </div>
@@ -101,7 +114,7 @@
                                     <div class="radio">
                                         <div class="radio-container">
                                             <input id="GDPR" name="legislation" type="radio" value="GDPR" checked>
-                                             <label for="GDPR">GDPR Only</label>
+                                            <label for="GDPR">GDPR Only</label>
                                         </div>
                                         <div class="radio-container">
                                             <input id="CCPA" name="legislation" type="radio" value="CCPA">
@@ -125,7 +138,7 @@
                                     <div class="radio">
                                         <div class="radio-container">
                                             <input id="eu" name="consent" type="radio" value="eu" checked>
-                                             <label for="eu">EU Only</label>
+                                            <label for="eu">EU Only</label>
                                         </div>
                                         <div class="radio-container">
                                             <input id="world" name="consent" type="radio" value="world">
@@ -145,11 +158,13 @@
                                 <div>
                                     <div class="radio radio-type3 checkbox-type">
                                         <div class="radio-container">
-                                            <input id="accept-banner" name="bannerButton[]" type="checkbox" value="accept">
-                                             <label for="accept-banner">Explicit accept and Customize buttons</label>
+                                            <input id="accept-banner" name="bannerButton[]" type="checkbox"
+                                                value="accept">
+                                            <label for="accept-banner">Explicit accept and Customize buttons</label>
                                         </div>
                                         <div class="radio-container">
-                                            <input id="reject-banner" name="bannerButton[]" type="checkbox" value="reject">
+                                            <input id="reject-banner" name="bannerButton[]" type="checkbox"
+                                                value="reject">
                                             <label for="reject-banner">Explicit reject buttons</label>
                                         </div>
                                     </div>
@@ -164,8 +179,10 @@
                                 <div>
                                     <div class="radio radio-type3 checkbox-type">
                                         <div class="radio-container">
-                                            <input id="framework" name="otherOptions[]" type="checkbox" value="framework">
-                                             <label for="framework">Enable IAB Transparency and Consent Framework</label>
+                                            <input id="framework" name="otherOptions[]" type="checkbox"
+                                                value="framework">
+                                            <label for="framework">Enable IAB Transparency and Consent
+                                                Framework</label>
                                         </div>
                                         <div class="radio-container">
                                             <input id="google" name="otherOptions[]" type="checkbox" value="google">
@@ -173,7 +190,8 @@
                                         </div>
                                         <div class="radio-container">
                                             <input id="scripts" name="otherOptions[]" type="checkbox" value="scripts">
-                                            <label for="scripts">Automatically block scripts detected by the plugin</label>
+                                            <label for="scripts">Automatically block scripts detected by the
+                                                plugin</label>
                                         </div>
                                     </div>
                                 </div>
@@ -181,22 +199,22 @@
                         </div>
                     </div>
 
-                </div>
-            
+                </section><!-- / cookie section -->
 
-            <div class="add_label">
+                <!-- privacy toggler -->
+                <div class="toggle-wrapper">
 
-                <label class="switch">
-                    <input type="checkbox">
-                    <span></span>
-                </label>
+                    <label class="toggler">
+                        <input type="checkbox" class="toggle" data-target="#privacy">
+                        <span></span>
+                    </label>
 
-                <h2>Add the privacy policy button</h2>
+                    <h2>Add the privacy policy button</h2>
 
-            </div>
+                </div><!-- / privacy toggler -->
 
-            
-                <div class="form-container">
+                <!-- privacy section -->
+                <section id="privacy" class="form-container hide">
                     <div class="form-row">
                         <div class="form-column">
                             <legend>Button style</legend>
@@ -204,12 +222,13 @@
                                 <div>
                                     <div class="radio radio-type2">
                                         <div class="radio-container ">
-                                            <input id="light-button" name="button-style" type="radio" value="light" checked>
+                                            <input id="light-button" name="button-style" type="radio" value="light"
+                                                checked>
                                             <label for="light-button"><small>Light</small></label>
                                         </div>
                                         <div class="radio-container ">
                                             <input id="dark-button" name="button-style" type="radio" value="dark">
-                                             <label for="dark-button"><small>Dark</small></label>
+                                            <label for="dark-button"><small>Dark</small></label>
                                         </div>
                                     </div>
                                 </div>
@@ -224,7 +243,7 @@
                                     <div class="radio radio-type3">
                                         <div class="radio-container ">
                                             <input id="auto" name="button-position" type="radio" value="auto">
-                                             <label for="auto">Put automatically button on footer</label>
+                                            <label for="auto">Put automatically button on footer</label>
                                         </div>
                                         <div class="radio-container ">
                                             <input id="manual" name="button-position" type="radio" value="manual">
@@ -235,22 +254,24 @@
                             </fieldset>
                         </div>
                     </div>
-    
+
+                </section><!-- / privacy section -->
+
+            </div><!-- / container body -->
+            <hr>
+            <!-- container footer -->
+            <div class="container-footer container">
+                <div class="row">
+                    <h4><a href="#" id="reset">Reset settings</a></h4>
+                    <a href="#" id="integrate" class="btn-primary">
+                        Integrate
+                    </a>
                 </div>
-            
-        </div>
-        <hr>
-        <div class="container-footer container">
-            <div class="row">
-                <h4><a href="#">Reset settings</a></h4>
-                <a href="#" id="integrate" class="btn-primary">
-                    Integrate
-                </a>
-            </div>
-        </div>
+            </div><!-- / container footer -->
         </form>
     </div>
 
+    <!-- main footer -->
     <footer>
         <nav>
             <ul>
@@ -262,7 +283,8 @@
                 </div>
             </ul>
         </nav>
-    </footer>
+    </footer><!-- / main footer -->
+
     <script src="dist/all.js"></script>
 </body>
 
